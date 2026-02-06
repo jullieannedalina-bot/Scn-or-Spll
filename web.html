@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAN or SPILL 💖</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<div class="container">
+    <h1>💖SCAN or SPILL💖</h1>
+    <p class="tagline">Say it or spill it… anonymously 💌</p>
+
+    <!-- modify this form HTML and place wherever you want your form -->
+    <form class="form-card" action="https://formspree.io/f/xreazjva" method="POST">
+
+        <div class="group">
+            <label>💘 Send To</label>
+            <input type="text" name="send_to" placeholder="Name" required>
+        </div>
+        
+        <div class="group">
+            <label>✍️ Your Name <span class="optional">(optional)</span></label>
+            <input type="text" name="your_name" placeholder="Leave blank to stay anonymous">
+        </div>
+
+        <div class="row">
+            <div class="group">
+                <label>🏫 Section</label>
+                <input type="text" name="section" placeholder="Section" required>
+            </div>
+
+            <div class="group">
+                <label>🎓 Strand</label>
+                <input type="text" name="strand" placeholder="Strand" required>
+            </div>
+        </div>
+
+        <div class="group">
+            <label>💌 Confession Category</label>
+            <select name="category" required>
+                <option disabled selected>Choose category</option>
+                <option>💖 Shout-out / Appreciation</option>
+                <option>😅 Funny Confession</option>
+                <option>🤐 Secret (light only)</option>
+                <option>🎓 Academic Motivation</option>
+                <option>👀 Message for Someone</option>
+            </select>
+        </div>
+
+        <div class="group">
+            <label>🎙️ Reading Style</label>
+            <select name="reading_style" required>
+                <option disabled selected>Select style</option>
+                <option>🎧 Whisper mode</option>
+                <option>🎙️ Radio DJ voice</option>
+                <option>🎭 Dramatic / teleserye style</option>
+                <option>🤖 AI / robotic voice</option>
+            </select>
+        </div>
+
+        <div class="group">
+            <label>💗 Your Message</label>
+            <textarea name="message" placeholder="Write your confession here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Confession 💘</button>
+
+        <div class="sent">
+            💌 The message has been sent! <br>
+            <small>Happy Valentine’s Day 💖</small>
+        </div>
+
+    </form>
+</div>
+
+</body>
+  </html>
